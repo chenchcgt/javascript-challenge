@@ -39,14 +39,17 @@ function runEnter(){
 
     console.log(filterData);
 
-    // list.html("");
+// clear page!!
 
-    data.forEach(function(filterData){
+    // reenter values
+
+    filterData.forEach(function(filterData){
         console.log(filterData);
         var row = tbody.append("tr");
     
         Object.entries(filterData).forEach(function([key,value]){
             console.log(key,value);
+            // cell.innerHTML = "";
             var cell = row.append("td");
             cell.text(value);
 
