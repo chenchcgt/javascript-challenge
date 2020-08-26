@@ -26,7 +26,7 @@ data.forEach(function(ufolist){
 
 // create event handler runEnter = name of function
 button.on("click",runEnter);
-// this is not working!!
+// this will run when pressing enter
 form.on("submit",runEnter);
 
 // function for event handler
